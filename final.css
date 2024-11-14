@@ -1,0 +1,95 @@
+/* Link Styling */
+a:link { color: red; }
+a:visited { color: blue; }
+a:hover { color: white; }
+a:active { color: green; }
+
+/* Big Box Styling */
+.big-box {
+  border: 3px solid black;
+  padding: 20px;
+  margin: 15px;
+  border-radius: 10px;
+  background-color: #e9ecef;
+}
+
+/* Flex container for arranging sub-boxes in columns */
+.column-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+/* Sub Box Styling */
+.box {
+  flex: 1 1 calc(33.33% - 15px); /* Three columns with space between */
+  border: 2px solid black;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #f0f8ff;  /* Light blue background */
+  width: 100px;               /* Reduced width */
+  height: 120px;              /* Reduced height */
+  overflow: auto;             /* Ensures content stays inside if it overflows */
+}
+
+/* Header Styling */
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.header h2 {
+  color: #333;
+}
+
+.image-box img {
+  width: 150px;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Navigation Styling */
+nav {
+  text-align: center;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;  /* Center the navigation links */
+  padding: 0;
+  list-style: none;         /* Remove default list styling */
+  gap: 20px;                /* Space between links */
+}
+
+nav ul li {
+  display: inline-block;    /* Ensure each item is aligned inline */
+}
+
+nav ul li a {
+  text-decoration: none;    /* Remove underline */
+  font-size: 18px;
+  color: #333;              /* Text color */
+  padding: 10px 20px;       /* Padding for clickable area */
+  border: none;             /* Remove border around the links */
+  transition: background-color 0.3s; /* Smooth background color transition */
+}
+
+nav ul li a:hover {
+  background-color: #333;   /* Add background color on hover */
+  color: white;             /* Change text color on hover */
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.marquee-text {
+  display: inline-block;
+}
